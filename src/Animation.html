@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .animate{
+            
+            background-color: coral;
+            animation: changeBackground 3s ease infinite;
+        }
+
+        @keyframes changeBackground{
+
+            0%{
+                background-color: coral;
+            }
+
+            50%{
+                background-color: blueviolet;
+            }
+
+            100%{
+                background-color: crimson;
+            }
+        }
+
+        .move{
+            animation: moveRight 4s ease-in-out infinite;
+        }
+
+        @keyframes moveRight{
+          0%{
+            transform: translate(0);
+          }
+          
+          100%{
+            transform: translate(100px);
+          }
+        }
+
+        
+        .verve :hover{
+            animation: zoom 3s ease-in-out infinite ;
+        }
+
+        @keyframes zoom{
+            form{
+                transform: scaleX(1.1);
+            }
+            to{
+                transform: scaleY(1.3);
+            }
+        }
+   </style>
+</head>
+<body>
+    <div class="animate">Welcome to animation page</div>
+    <div class="move">Welcome to our page, we are glad to have you.</div>
+    <div class="verve"><img src="verveshape.png" class="h-[70px]"></div>
+</body>
+</html>
